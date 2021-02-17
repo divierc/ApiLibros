@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiLibros</name>
+    </assembly>
+    <members>
+        <member name="M:ApiLibros.Controllers.AutorController.GetAutores">
+            <summary>
+            Optener todos los autores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.AutorController.GetAutor(System.Int32)">
+            <summary>
+            Optener un autor individual
+            </summary>
+            <param name="autorId">Este es el id del autor </param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.AutorController.CrearAutor(ApiLibros.Models.Dtos.AutorDto)">
+            <summary>
+            Crear un nuevo autor
+            </summary>
+            <param name="autorDto">Contiene la info para crear un nuevo autor</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.AutorController.ActualizarAutor(System.Int32,ApiLibros.Models.Dtos.AutorDto)">
+            <summary>
+            Actualizar un autor existente
+            </summary>
+            <param name="autorId"></param>
+            <param name="autorDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.AutorController.BorrarAutor(System.Int32)">
+            <summary>
+            Borrar un autor existente
+            </summary>
+            <param name="autorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.EditorialController.GetEditoriales">
+            <summary>
+            Optener las editioriales
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.EditorialController.GetEditorial(System.Int32)">
+            <summary>
+            Optener una editorial
+            </summary>
+            <param name="editorialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.EditorialController.CrearEditorial(ApiLibros.Models.Dtos.EditorialDto)">
+            <summary>
+            Crear una editorial
+            </summary>
+            <param name="editorialDto">contiene la informacion para crear la nueva editorial</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.EditorialController.ActualizarEditorial(System.Int32,ApiLibros.Models.Dtos.EditorialDto)">
+            <summary>
+            Actualiza una editorial ya existente
+            </summary>
+            <param name="editorialId"></param>
+            <param name="editorialDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.EditorialController.BorrarEditorial(System.Int32)">
+            <summary>
+            Borra una editorial existente
+            </summary>
+            <param name="editorialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.GetLibros">
+            <summary>
+            Optener todos los libros
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.GetLibro(System.Int32)">
+            <summary>
+            Optener solo un libro 
+            </summary>
+            <param name="libroId">id del libro a consultar</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.GetLibrosPorAutor(System.Int32)">
+            <summary>
+            Optener libros por Autor
+            </summary>
+            <param name="autorId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.GetLibrosPorEditorial(System.Int32)">
+            <summary>
+            Optener libros por Editorial
+            </summary>
+            <param name="editorialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.Buscar(System.String)">
+            <summary>
+            Optener libros por nombre
+            </summary>
+            <param name="nombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.CrearLibro(ApiLibros.Models.Dtos.LibroDto)">
+            <summary>
+            Crear un libro
+            </summary>
+            <param name="libroDto">parametros que debe tener para crear un libro</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.ActualizarLibro(System.Int32,ApiLibros.Models.Dtos.LibroDto)">
+            <summary>
+            Actualizar un libro
+            </summary>
+            <param name="libroId">id del libro a actualizar </param>
+            <param name="libroDto">parametros nuevos a ser actualizados</param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiLibros.Controllers.LibrosController.BorrarLibro(System.Int32)">
+            <summary>
+            Borrar un libro existente
+            </summary>
+            <param name="libroId">is del libro a borrar</param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiLibros.Models.Dtos.AutorDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiLibros.Repository.AutorRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiLibros.Repository.EditorialRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiLibros.Repository.LibroRepository">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

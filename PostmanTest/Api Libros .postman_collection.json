@@ -1,0 +1,432 @@
+{
+	"info": {
+		"_postman_id": "13097c23-e673-4c7c-9884-074260cbe119",
+		"name": "Api Libros ",
+		"description": "Creacion de Api para prueba de ingreso en Nexos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Libro",
+			"item": [
+				{
+					"name": "Optener Libros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/libros",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"libros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Optener libro individual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/libros/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"libros",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar libro",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 5,\r\n        \"titulo\": \"ejemplo2 test\",\r\n        \"agno\": 2009,\r\n        \"genero\": \"drama\",\r\n        \"numeroPaginas\": 56,\r\n        \"editorialId\": 1,\r\n        \"editorial\": null,\r\n        \"autorId\": 3,\r\n        \"autor\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44388/api/libros/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"libros",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Libro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/libros/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"libros",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear libro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"titulo\": \"ejemplo7 crear\",\r\n        \"agno\": 2020,\r\n        \"genero\": \"terror\",\r\n        \"numeroPaginas\": 236,\r\n        \"editorialId\": 1,\r\n        \"autorId\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44388/api/libros",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"libros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Optener libros por autor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/libros/GetLibrosPorAutor/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"libros",
+								"GetLibrosPorAutor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Optener libros por editorial",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/libros/GetLibrosPorEditorial/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"libros",
+								"GetLibrosPorEditorial",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Autor",
+			"item": [
+				{
+					"name": "Optener autores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/autor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Optener autor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/autor/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"autor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \r\n        \"nombre\": \"test  autor\",\r\n        \"apellido\": \"crear\",\r\n        \"nombreCompleto\": \"test  autor crear\",\r\n        \"fechaNacimiento\": \"1980-11-22T00:00:00\",\r\n        \"ciudadProcedencia\": \"medellin\",\r\n        \"correoElectronico\": \"m@m.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44388/api/autor",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar autor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 3,\r\n        \"nombre\": \"Maria Antonieta\",\r\n        \"apellido\": \"jaramillo\",\r\n        \"nombreCompleto\": \"Maria Antonieta jaramillo\",\r\n        \"fechaNacimiento\": \"1980-06-05T00:00:00\",\r\n        \"ciudadProcedencia\": \"Cali\",\r\n        \"correoElectronico\": \"dsfadsf@a.com\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44388/api/autor/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"autor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar libro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/autor/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"autor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Editorial",
+			"item": [
+				{
+					"name": "Optener editoriales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/editorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Optener editorial individual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/editorial/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"editorial",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear editorial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n      \r\n        \"nombre\": \"test crear\",\r\n        \"direccion\": \"descripcion crear\",\r\n        \"telefono\": 123456,\r\n        \"correoElectronico\": \"crear@janes.com\",\r\n        \"maxLibros\": -1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44388/api/editorial",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"editorial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar editorial",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 2,\r\n        \"nombre\": \"planeta tierra\",\r\n        \"direccion\": \"desc2 actualizado test\",\r\n        \"telefono\": 6874564,\r\n        \"correoElectronico\": \"planeta@gmail.com\",\r\n        \"maxLibros\": 5\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44388/api/editorial/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"editorial",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete editorial",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44388/api/editorial/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44388",
+							"path": [
+								"api",
+								"editorial",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
