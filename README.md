@@ -9,4 +9,5 @@ Despues de configurada la conexion de BD ejecutar en Consola de Administracion d
 - update-database
 
 # Pruebas realizadas en carpeta Postman
-# frontEnd en desarrollo
+# backEnd: https://github.com/divierc/ApiLibros/
+# frontEnd: https://github.com/divierc/ClienteLibros 
