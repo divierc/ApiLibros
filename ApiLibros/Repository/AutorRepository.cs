@@ -32,6 +32,7 @@ namespace ApiLibros.Repository
 
         public bool CrearAutor(Autor autor)
         {
+            Console.Write(autor);
             _db.Autor.Add(autor);
             return Guardar();
         }
@@ -61,7 +62,7 @@ namespace ApiLibros.Repository
 
         public bool Guardar()
         {
-            return _db.SaveChanges() >= 0 ? true : false;
+            return _db.SaveChanges() >= 0;
         }
     }
 }

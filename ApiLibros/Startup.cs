@@ -62,10 +62,12 @@ namespace ApiLibros
 
             });
 
-            
 
+            /*Damos soporte para CORS*/
+            services.AddCors();
 
             services.AddControllers();
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,12 +90,16 @@ namespace ApiLibros
 
             app.UseRouting();
 
+            /*Damos soporte para CORS*/
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }

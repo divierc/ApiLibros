@@ -82,7 +82,7 @@ namespace ApiLibros.Repository
 
         public bool Guardar()
         {
-            return _db.SaveChanges() >= 0 ? true : false;
+            return _db.SaveChanges() >= 0;
         }
     }
 }
